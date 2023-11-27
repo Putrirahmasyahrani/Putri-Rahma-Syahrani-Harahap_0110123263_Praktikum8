@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .wrapper{
+            background: pink;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .wrapper .header{
+            text-align: center;
+            background-color: darkseagreen;
+            height: 10vh;
+            margin: 10px 20px;
+            line-height: 10vh;
+        }
+        .wrapper .content{
+            display: flex;
+        }
+        .wrapper .content .aside{
+            text-align: center;
+            width: 30%;
+            height: 70vh;
+            background: darkcyan;
+            margin: 10px 20px;
+            line-height: 70vh;
+        }
+        .wrapper .content .main{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            background: indianred;
+            margin: 10px 20px;
+        }
+        .wrapper .content .main h6{
+            text-align: center;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .wrapper .content .main .box-img{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+        .wrapper .content .main .box-img .img{
+            text-align: center;
+            height: 150px;
+            width: 22%;
+            gap: 5rem;
+            background: white;
+            margin-bottom: 20px;
+            line-height: 150px;
+        }
+        .wrapper .footer{
+            text-align: center;
+            height: 10vh;
+            background-color: darkseagreen;
+            margin: 10px 20px;
+            line-height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Header</div>
+        <div class="content">
+         <div class="aside">Aside</div>
+         <div class="main">
+            <h6>Article</h6>
+            <div class="box-img">
+                <div class="img">Image</div>
+                <div class="img">Image</div>
+                <div class="img">Image</div>
+            </div>
+         </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
